@@ -27,10 +27,10 @@ def stability(c, max_iter):
 
 def denormailize(palette):
     return [tuple(int(channel*255) for channel in color) for color in palette]
-#print(stability(1,100))
+
 
 colormap = matplotlib.cm.get_cmap('inferno').colors
-#print(colormap[0])
+
 
 palette = denormailize(colormap)
 
